@@ -1,0 +1,5 @@
+build/bin/{{.BinaryName}} usr/bin
+{{- if eq .BinaryName "gdoge" }}
+build/deb/dogeum/completions/bash/gdoge etc/bash_completion.d
+build/deb/dogeum/completions/zsh/_gdoge usr/share/zsh/vendor-completions
+{{end -}}
